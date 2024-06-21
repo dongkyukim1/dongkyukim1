@@ -1,6 +1,6 @@
 <div align="center">
   
-  ![header](https://capsule-render.vercel.app/api?type=waving&color=004300&height=300&section=header&text=DONGKYU's%20Github&fontSize=80)
+  ![header](https://capsule-render.vercel.app/api?type=waving&color=#e69138&height=300&section=header&text=DONGKYU's%20Github&fontSize=80)
   
   안녕하세요.  개발자 김동규 입니다:)<br><br><br>
   
@@ -19,20 +19,9 @@
   <img src="https://img.shields.io/badge/AWS RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white"/>
   
   ### :speech_balloon: SNS :speech_balloon:</br>
-  <a href="https://taehyeon-stroy.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white"/></a>
-  <!--<a href="https://www.instagram.com/taeehyeonn/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>-->
+  <a href="[https://taehyeon-stroy.tistory.com/](https://begin-developer.tistory.com/)" target="_blank"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white"/></a>
+  <!--<a href="https://www.instagram.com/kimdong.k/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>-->
   
   ### :envelope: Mail :envelope:</br>
-  <img src="https://img.shields.io/badge/| wkdxogus3492@gmail.com-EA4335?style=for-the-badge&logo=Gmail&logoColor=white"/></br></br>
+  <img src="https://img.shields.io/badge/| wlsntus55@gmail.com-EA4335?style=for-the-badge&logo=Gmail&logoColor=white"/></br></br>
   
-  # Baekjoon Tear🎖<br>
-  [![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=xogus3492)](https://solved.ac/xogus3492)</br></br>
-
-  # Stats :muscle:</br>
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=xogus3492&show_icons=true&theme=radical)</br></br>
-  
-  # Most Language :computer:</br>
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xogus3492&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-</div>
