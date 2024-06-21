@@ -2,8 +2,8 @@
   
   ![header](https://capsule-render.vercel.app/api?type=waving&color=#e69138&height=300&section=header&text=DONGKYU's%20Github&fontSize=80)
   
-  안녕하세요.  개발자 김동규 입니다:)<br><br><br>
-  
+ <h1>안녕하세요.  개발자 김동규 입니다</h1> <br><br><br>
+  https://img.extmovie.com/files/attach/images/148/149/776/077/7544bb0c0fd4f97d0a0709ba03992999.gif
   # Tech Stack 🛠️</br>
 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=CoffeeScript&logoColor=white"/><br>
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/>
