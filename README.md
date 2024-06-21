@@ -15,7 +15,8 @@
 
 
   ### :speech_balloon: SNS :speech_balloon:</br>
-  <a href="[https://begin-developer.tistory.com/]" target="_blank"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white"/></a>
+  <a href="https://begin-developer.tistory.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white"/></a>
   <!--<a href="https://www.instagram.com/kimdong.k/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>-->
   
   ### :envelope: Mail :envelope:</br>
