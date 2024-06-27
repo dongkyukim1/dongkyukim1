@@ -1,6 +1,6 @@
 <div align="center">
   
-  ![header] (https://capsule-render.vercel.app/api?type=waving&color=#e69138&height=300&section=header&text=DONGKYU's%20Github&fontSize=80)
+  ![header](https://capsule-render.vercel.app/api?type=waving&color=#e69138&height=300&section=header&text=DONGKYU's%20Github&fontSize=80)
   
   <h1>안녕하세요. 개발자 김동규 입니다</h1>
   
