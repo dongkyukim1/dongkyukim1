@@ -28,5 +28,4 @@
   ### :envelope: Mail :envelope:
   <img src="https://img.shields.io/badge/|%20wlsntus55@gmail.com-EA4335?style=for-the-badge&logo=Gmail&logoColor=white"/>
   
-  ![3D Profile Contributions](./profile-3d-contrib/profile-green-animate.svg)
 </div>
