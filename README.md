@@ -54,7 +54,7 @@
 ### 프로젝트 1: [스타벅스 키오스크] - Solo project
 - **설명**: 자바 스윙과 오라클을 이용한 스타벅스 키오스크 만들기.
 - **기술 스택**: 자바 swing , Oracle
-- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/java_swing1)
+- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/Java_Swing)
 
 ### 프로젝트 2: [Dog-foot(개발자를 위한 커뮤니티)]
 - **설명**: 모든 개발자들이 소통할 수 있는 커뮤니티사이트를 만들자
@@ -62,7 +62,7 @@
           : 프론트엔드 -> 모든 html 디자인과 , javascript(무한슬라이드, 유투브 키값으로 썸네일가져오기) ,css 담당
                       -> Text Editor 등 기능 추가  
 - **기술 스택**: Java,Spring,Oracle,Html,css,JavaScript,Mybatis..
-- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/dog_foot)
+- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/dogFoot)
 
 
 ## 📫 연락처
