@@ -68,12 +68,80 @@
 - **기술 스택**: Java, Spring, Oracle, HTML, CSS, JavaScript, Mybatis
 - **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/dogFoot)
 - **구현 화면**:
+  <div class="slideshow-container">
 
-  <div style="width: 400px; height: 300px; overflow: hidden;">
-    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png" width="400">
-    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png" width="400">
-    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%A0%95%EB%B3%B4.png" width="400">
+  <div class="mySlides fade">
+    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png" style="width:100%">
   </div>
+
+  <div class="mySlides fade">
+    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%A0%95%EB%B3%B4.png" style="width:100%">
+  </div>
+
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <style>
+  .slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  </style>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
 
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
