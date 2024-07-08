@@ -51,22 +51,27 @@
   ![PowerPoint](https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)
 
 ## 🔧 프로젝트
+
 ### 프로젝트 1: [스타벅스 키오스크] - Solo project
 - **설명**: 자바 스윙과 오라클을 이용한 스타벅스 키오스크 만들기.
-- **기술 스택**: 자바 swing , Oracle
+- **기술 스택**: 자바 Swing, Oracle
 - **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/Java_Swing)
+- **구현 화면**:
+  ![스타벅스 키오스크 구현 화면]([이미지 경로](https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EB%A9%94%EC%9D%B8.png)
+  ![스타벅스 키오스크 구현 화면]([이미지 경로](https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EA%B4%80%EB%A6%AC%EC%9E%90%EB%AA%A8%EB%93%9C.png)  
 
 ### 프로젝트 2: [Dog-foot(개발자를 위한 커뮤니티)]
-- **설명**: 모든 개발자들이 소통할 수 있는 커뮤니티사이트를 만들자
-- **역할**: 백엔드 -> Mybatis 의 조회수를 이용한 인기게시판 생성
-          : 프론트엔드 -> 모든 html 디자인과 , javascript(무한슬라이드, 유투브 키값으로 썸네일가져오기) ,css 담당
-                      -> Text Editor 등 기능 추가  
-- **기술 스택**: Java,Spring,Oracle,Html,css,JavaScript,Mybatis..
+- **설명**: 모든 개발자들이 소통할 수 있는 커뮤니티 사이트를 만들자.
+- **역할**:
+  - 백엔드: Mybatis 의 조회수를 이용한 인기게시판 생성
+  - 프론트엔드: 모든 HTML 디자인, JavaScript (무한 슬라이드, 유튜브 키값으로 썸네일 가져오기), CSS 담당, Text Editor 등 기능 추가
+- **기술 스택**: Java, Spring, Oracle, HTML, CSS, JavaScript, Mybatis
 - **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/dogFoot)
-
+- **구현 화면**:
+  ![Dog-foot 구현 화면]([이미지 경로](https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png)
+   ![Dog-foot 구현 화면]([이미지 경로](https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png)
 
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
-- **blog:  https://begin-developer.tistory.com/
+- **블로그**: [블로그 링크](https://begin-developer.tistory.com/)
 - **GitHub**: [GitHub 프로필](https://github.com/dongkyukim1)
-
