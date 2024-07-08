@@ -57,8 +57,8 @@
 - **기술 스택**: 자바 Swing, Oracle
 - **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/Java_Swing)
 - **구현 화면**:
-  ![스타벅스 키오스크 구현 화면](https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EB%A9%94%EC%9D%B8.png)
-  ![스타벅스 키오스크 구현 화면](https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EA%B4%80%EB%A6%AC%EC%9E%90%EB%AA%A8%EB%93%9C.png)
+  <img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EB%A9%94%EC%9D%B8.png" width="400">
+  <img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EA%B4%80%EB%A6%AC%EC%9E%90%EB%AA%A8%EB%93%9C.png" width="400">
 
 ### 프로젝트 2: [Dog-foot(개발자를 위한 커뮤니티)]
 - **설명**: 모든 개발자들이 소통할 수 있는 커뮤니티 사이트를 만들자.
@@ -68,9 +68,9 @@
 - **기술 스택**: Java, Spring, Oracle, HTML, CSS, JavaScript, Mybatis
 - **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/dogFoot)
 - **구현 화면**:
-  ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png)
-  ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png)
-  ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%A0%95%EB%B3%B4.png)
+  <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png" width="400">
+  <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png" width="400">
+  <img src="https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%A0%95%EB%B3%B4.png" width="400">
 
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
