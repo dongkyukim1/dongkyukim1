@@ -93,6 +93,19 @@
     <span class="dot"></span> 
   </div>
 
+### 프로젝트 3: [파이썬을 이용한 자동화 RPA 모음]
+- **설명**: 파이썬을 이용하여 반복적인 작업을 자동화하는 RPA 프로젝트 모음입니다.
+- **역할**:
+  - 네이버 기사 캡처: 특정 키워드로 네이버 뉴스를 검색하고, 결과를 자동으로 캡처하여 저장
+  - 엑셀 자동 정리: 대량의 데이터를 엑셀 파일로 정리 및 포맷팅
+  - 자동 멜론 TOP 100: 멜론 차트에서 최신 TOP 100 곡을 자동으로 수집하여 정리
+- **기술 스택**: Python, Selenium, OpenPyXL, BeautifulSoup
+- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/RPA_Automation)
+- **구현 화면**:
+  <img src="https://github.com/dongkyukim1/RPA_Automation/blob/main/screenshots/naver_news_capture.png" width="400">
+  <img src="https://github.com/dongkyukim1/RPA_Automation/blob/main/screenshots/excel_automation.png" width="400">
+  <img src="https://github.com/dongkyukim1/RPA_Automation/blob/main/screenshots/melon_top100.png" width="400">
+
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
 - **블로그**: [블로그 링크](https://begin-developer.tistory.com/)
