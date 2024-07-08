@@ -70,6 +70,7 @@
 - **구현 화면**:
   ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A9%94%EC%9D%B8.png)
   ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%8B%9C%ED%8C%90.png)
+  ![Dog-foot 구현 화면](https://github.com/dongkyukim1/dogFoot/blob/master/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%A0%95%EB%B3%B4.png)
 
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
