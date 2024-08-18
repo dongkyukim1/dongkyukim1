@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" type="image/png">
+    <title>팀 프로젝트 관리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background: url('https://512pixels.net/downloads/macos-wallpapers/10-14-Night.jpg') center/cover no-repeat fixed;
+            overflow: hidden;
+            color: #ffffff;
+        }
+
+        /* 헤더 (메뉴바) 스타일 */
+        header {
+            background: rgba(50, 50, 50, 0.8);
+            backdrop-filter: blur(10px);
+            display: block;
+            font-size: 0.9em;
+            height: 1.5em;
+            -webkit-user-select: none;
+            user-select: none;
+            padding: 0.2em 0;
+        }
+        header ul {
+            margin: 0 5px;
+            padding: 0 3px;
+        }
+        header li {
+            display: inline-block;
+            line-height: 1.5em;
+            padding: 0 0.5em;
+            position: relative;
+            cursor: default;
+        }
+        header .left { float: left; }
+        header .right { float: right; }
+
+        /* 데스크톱 아이콘 스타일 */
+        #Desktop {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: calc(100% - 2em);
+            padding: 10px;
+        }
+        #Desktop .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #Desktop .icon img {
+            width: 64px;
+            height: 64px;
+            transition: all 0.2s;
+        }
+        #Desktop .icon:hover img {
+            transform: scale(1.1);
+        }
+        #Desktop .icon .title {
+            margin-top: 5px;
+            font-size: 0.9em;
+            word-break: break-word;
+            text-shadow: 0px 0px 4px #000;
+        }
+        #Desktop .icon.clicked img {
+            transform: scale(0.9);
+        }
+
+        /* 독(Dock) 스타일 */
+        footer {
+            bottom: 10px;
+            display: inline-block;
+            height: 4.4em;
+            left: 50%;
+            min-width: 35em;
+            padding: 0 10px;
+            perspective: 1000px;
+            position: absolute;
+            text-align: center;
+            transform: translatex(-50%);
+        }
+        footer:before {
+            background: rgba(50, 50, 50, 0.5);
+            backdrop-filter: blur(10px);
+            bottom: 0;
+            content: "";
+            height: 4em;
+            left: 0;
+            margin-top: 15px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: rotatex(45deg);
+            width: 100%;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        footer ul {
+            display: inline-block;
+            margin: 0 0.1em;
+            padding: 0;
+            transform-origin: bottom center !important;
+        }
+        footer li {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            transform: scale(1);
+            transform-origin: bottom center;
+            transition: transform 2s;
+        }
+        footer img {
+            align-items: center;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0 5px;
+            position: relative;
+            transform: scale(1);
+            transform-origin: bottom center !important;
+            transition: all 0.2s;
+            width: 4em;
+        }
+        footer img:hover {
+            margin: 0 10px;
+            transform: scale(1.2);
+        }
+
+        /* 프로젝트 창 스타일 */
+        .window {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(50, 50, 50, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            display: none;
+            color: #ffffff;
+        }
+        .window h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .window input, .window textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background: rgba(70, 70, 70, 0.8);
+            color: #ffffff;
+        }
+        .window button {
+            background: #0077ed;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .window button:hover {
+            background: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="left">
+            <li class="apple"><i class="fab fa-apple"></i></li>
+            <li><strong>Finder</strong></li>
+            <li>File</li>
+            <li>Edit</li>
+            <li>View</li>
+            <li>Go</li>
+            <li>Window</li>
+            <li>Help</li>
+        </ul>
+        <ul class="right">
+            <li><i class="fas fa-battery-full"></i></li>
+            <li><i class="fas fa-wifi"></i></li>
+            <li><span id="clock"></span></li>
+        </ul>
+    </header>
+
+    <div id="Desktop">
+        <div class="icon" onclick="handleIconClick(this, 'listProjects')">
+            <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="프로젝트 목록">
+            <span class="title">프로젝트 목록</span>
+        </div>
+        <div class="icon" onclick="handleIconClick(this, 'createProject')">
+            <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="프로젝트 만들기">
+            <span class="title">프로젝트 만들기</span>
+        </div>
+        <div class="icon" onclick="handleIconClick(this, 'joinProject')">
+            <img src="https://cdn-icons-png.flaticon.com/512/1967/1967199.png" alt="프로젝트 참가">
+            <span class="title">프로젝트 참가</span>
+        </div>
+        <div class="icon" onclick="handleIconClick(this, 'inviteMembers')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IMessage_logo.svg/234px-IMessage_logo.svg.png?20180402204645" alt="팀원 초대">
+            <span class="title">팀원 초대</span>
+        </div>
+    </div>
+
+    <div id="createProject" class="window">
+        <h2>새 프로젝트 만들기</h2>
+        <input type="text" id="projectName" placeholder="프로젝트 이름">
+        <textarea id="projectDescription" placeholder="프로젝트 설명"></textarea>
+        <button onclick="createNewProject()">만들기</button>
+    </div>
+
+    <div id="joinProject" class="window">
+        <h2>프로젝트 참가</h2>
+        <input type="text" placeholder="프로젝트 코드">
+        <button onclick="closeWindow('joinProject')">참가하기</button>
+    </div>
+
+    <div id="listProjects" class="window">
+        <h2>프로젝트 목록</h2>
+        <ul id="projectList">
+            <!-- 프로젝트 목록이 여기에 동적으로 추가됩니다 -->
+        </ul>
+        <button onclick="closeWindow('listProjects')">닫기</button>
+    </div>
+
+    <div id="inviteMembers" class="window">
+        <h2>팀원 초대</h2>
+        <input type="text" placeholder="이메일 주소">
+        <button onclick="closeWindow('inviteMembers')">초대하기</button>
+    </div>
+
+    <footer>
+        <ul>
+            <li data-title="ChatGPT">
+                <a href="https://chat.openai.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+                </a>
+            </li>
+            <li data-title="Chrome">
+                <a href="https://www.google.com/chrome" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888846.png" alt="Chrome">
+                </a>
+            </li>
+            <li data-title="Gmail">
+                <a href="https://mail.google.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail">
+                </a>
+            </li>
+            <li data-title="Claude">
+                <a href="https://claude.ai/chat" target="_blank">
+                    <img src="https://avatars.slack-edge.com/2023-01-25/4682316783575_bbab0cdcdb3685eb5c87_512.png" alt="Claude">
+                </a>
+            </li>
+            <li data-title="Notion">
+                <a href="https://www.notion.so" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}`;
+        }
+
+        function closeAllWindows() {
+            const windows = document.querySelectorAll('.window');
+            windows.forEach(window => {
+                window.style.display = 'none';
+            });
+        }
+
+        function openWindow(id) {
+            closeAllWindows();
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function closeWindow(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        function handleIconClick(icon, windowId) {
+            document.querySelectorAll('#Desktop .icon').forEach(el => el.classList.remove('clicked'));
+            icon.classList.add('clicked');
+            setTimeout(() => {
+                openWindow(windowId);
+                icon.classList.remove('clicked');
+            }, 300);
+        }
+
+        function createNewProject() {
+            const projectName = document.getElementById('projectName').value;
+            const projectDescription = document.getElementById('projectDescription').value;
+            
+            if (projectName) {
+                const desktop = document.getElementById('Desktop');
+                const newProjectIcon = document.createElement('div');
+                newProjectIcon.className = 'icon';
+                newProjectIcon.innerHTML = `
+                    <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="${projectName}">
+                    <span class="title">${projectName}</span>
+                `;
+                newProjectIcon.onclick = function() {
+                    alert(`프로젝트 이름: ${projectName}\n설명: ${projectDescription}`);
+                };
+                desktop.appendChild(newProjectIcon);
+
+                // 프로젝트 목록에 추가
+                const projectList = document.getElementById('projectList');
+                const listItem = document.createElement('li');
+                listItem.textContent = projectName;
+                projectList.appendChild(listItem);
+
+                closeWindow('createProject');
+                document.getElementById('projectName').value = '';
+                document.getElementById('projectDescription').value = '';
+            } else {
+                alert('프로젝트 이름을 입력해주세요.');
+            }
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

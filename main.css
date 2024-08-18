@@ -1,0 +1,177 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+.header {
+    background-color: #3c3c3c;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.file-explorer {
+    width: 250px;
+    background-color: #252526;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.file-tree {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.file-tree li {
+    margin-bottom: 5px;
+}
+
+.file {
+    color: #d4d4d4;
+}
+
+.folder {
+    color: #c5c5c5;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.code-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.code-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1e1e1e;
+    overflow-y: auto;
+}
+
+.code-panel + .code-panel {
+    border-left: 1px solid #454545;
+}
+
+.code-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.code-panel pre {
+    flex: 1;
+    margin: 0;
+    overflow: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #252526;
+}
+
+.action-button {
+    background-color: #0e639c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #1177bb;
+}
+
+.result-container {
+    height: 200px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #454545;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0e639c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.help-content {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.help-content h3 {
+    margin-top: 20px;
+    color: #0e639c;
+}
+
+.help-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.help-content li {
+    margin-bottom: 10px;
+}
+
+.help-content strong {
+    color: #569cd6;
+}
+
+.help-content i {
+    margin-right: 5px;
+}
