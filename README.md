@@ -51,15 +51,31 @@
   ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
   ![PowerPoint](https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)
 
-## 🔧 프로젝트
+🔧 프로젝트
+대표 프로젝트: [형상관리 사이트] - 5인 프로젝트 (PM)
 
-### 프로젝트 1: [스타벅스 키오스크] - Solo project
-- **설명**: 자바 스윙과 오라클을 이용한 스타벅스 키오스크 만들기.
-- **기술 스택**: 자바 Swing, Oracle
-- **링크**: [GitHub 저장소 링크](https://github.com/dongkyukim1/Java_Swing)
-- **구현 화면**:
-  <img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EB%A9%94%EC%9D%B8.png" width="400">
-  <img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EA%B4%80%EB%A6%AC%EC%9E%90%EB%AA%A8%EB%93%9C.png" width="400">
+설명: 형상 관리 웹사이트 개발 프로젝트
+기술 스택: Spring Boot, React, MySQL
+링크: GitHub 저장소 링크
+구현 내용:
+
+프로젝트 관리 기능 (생성, 수정, 삭제)
+이슈 트래킹 시스템
+버전 관리 및 브랜치 관리
+사용자 권한 관리
+대시보드를 통한 프로젝트 현황 시각화
+
+
+상세 정보: 자세한 내용은 리드미를 참조해 주세요.
+
+프로젝트 1: [스타벅스 키오스크] - Solo project
+
+설명: 자바 스윙과 오라클을 이용한 스타벅스 키오스크 만들기
+기술 스택: 자바 Swing, Oracle
+링크: GitHub 저장소 링크
+구현 화면:
+<img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EB%A9%94%EC%9D%B8.png" width="400">
+<img src="https://github.com/dongkyukim1/Java_Swing/blob/main/7%EC%A1%B0_%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC/%EA%B5%AC%ED%98%84%ED%99%94%EB%A9%B4/%EA%B4%80%EB%A6%AC%EC%9E%90%EB%AA%A8%EB%93%9C.png" width="400">
 
 ### 프로젝트 2: [Dog-foot(개발자를 위한 커뮤니티)]
 - **설명**: 모든 개발자들이 소통할 수 있는 커뮤니티 사이트를 만들자.
