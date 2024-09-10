@@ -7,6 +7,12 @@
 
 > "조금씩이라도 매일 배우자" - 저의 개발 철학입니다.
 
+## 🔭 현재 진행 중인 프로젝트
+I'm currently working on [DevHub](https://github.com/dongkyukim1/devhub) - Git 기반의 형상 관리 및 협업 플랫폼
+
+## 🌱 현재 학습 중인 기술
+I'm currently learning **React** to enhance my front-end development skills and build more dynamic user interfaces.
+
 ### 핵심 역량
 - 🚀 프로젝트 리더십: 3번의 프로젝트 PM 경험
 - 🌎 글로벌 역량: 해외 교환학생 & 미국 출장 관리자 경험
@@ -43,21 +49,40 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+
+### 웹 기술
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge&logo=java&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ### 데이터베이스
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ### 도구 & 플랫폼
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=apache-tomcat&logoColor=black)
 
 ### 협업 도구
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 
+### 테스트 & 문서화
+![JUnit](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+### 성능 최적화
+![Lighthouse](https://img.shields.io/badge/Lighthouse-F44B21?style=for-the-badge&logo=lighthouse&logoColor=white)
 ## 🚀 주요 프로젝트
 
 ### 1. DevHub - 형상 관리 웹사이트 (5인 프로젝트, PM 역할)
@@ -116,6 +141,18 @@
 - 기술 리더 또는 아키텍트로 성장
 - 오픈 소스 프로젝트 기여 및 커뮤니티 리더십 발휘
 - 소프트웨어 개발 방법론 혁신 및 업계 트렌드 선도
+- 
+## 📊 GitHub 통계
+
+![김동규의 GitHub 통계](https://github-readme-stats.vercel.app/api?username=dongkyukim1&show_icons=true&theme=radical)
+
+## 🔤 주로 사용하는 언어
+
+![주로 사용하는 언어](https://github-readme-stats.vercel.app/api/top-langs/?username=dongkyukim1&layout=compact&theme=radical)
+
+## 🔥 연속 커밋 스트릭
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=dongkyukim1&theme=dark)](https://git.io/streak-stats)
+
 
 ## 📫 연락처
 - **이메일**: wlsntus55@gmail.com
