@@ -74,7 +74,7 @@
   - 프론트엔드 개발 총괄
   - REST API 설계 및 구현
   - Docker를 활용한 개발 환경 표준화 및 AWS 배포
-- **GitHub**: [프로젝트 링크](https://github.com/woongheo1/devhub)
+- **GitHub**: [프로젝트 링크](https://github.com/dongkyukim1/devhub-server)
 
 ### 2. Dog-foot - 개발자 커뮤니티 (4인 프로젝트, PM 역할)
 - **설명**: 개발자를 위한 강의 추천 및 소통 플랫폼
