@@ -99,7 +99,7 @@ I'm currently learning **React** to enhance my front-end development skills and 
 
 ### 1. DevHub - 형상 관리 웹사이트 (5인 프로젝트, PM 역할)
 - **설명**: Git 기반의 형상 관리 및 협업 플랫폼
-- **기술 스택**: Spring Boot, React, MySQL, Docker, AWS
+- **기술 스택**: Spring Boot, Flask, MySQL, Docker, AWS,JS
 - **주요 기능**: 
   - 프로젝트 관리 (생성, 수정, 삭제)
   - 이슈 트래킹 시스템
