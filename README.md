@@ -162,8 +162,9 @@ I'm currently learning **React** to enhance my front-end development skills and 
 
 ![주로 사용하는 언어](https://github-readme-stats.vercel.app/api/top-langs/?username=dongkyukim1&layout=compact&theme=radical)
 
-## 🔥 연속 커밋 스트릭
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=dongkyukim1&theme=dark&cache_bust=1)](https://git.io/streak-stats)
+<a href="https://git.io/streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dongkyukim1&theme=dark" alt="GitHub Streak" />
+</a>
 
 
 
