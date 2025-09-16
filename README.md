@@ -12,12 +12,12 @@
 저의 상세한 프로젝트 경험과 기술 스택을 확인하실 수 있는 포트폴리오 웹사이트를 방문해 주세요!
 
 <p align="center">
-  <a href="https://dongkyu.shop" target="_blank">
+  <a href="https://dongkyukim.com" target="_blank">
     <img src="https://img.shields.io/badge/My_Portfolio-FF5722?style=for-the-badge&logo=vue.js&logoColor=white" alt="포트폴리오 웹사이트" />
   </a>
 </p>
 
-이 웹사이트는 Vue.js를 사용하여 직접 개발하였습니다. 제 기술 스택, 프로젝트 경험, 그리고 개발 철학을 더 자세히 살펴보실 수 있습니다.
+이 웹사이트는 next.js를 사용하여 직접 개발하였습니다. 제 기술 스택, 프로젝트 경험, 그리고 개발 철학을 더 자세히 살펴보실 수 있습니다.
 
 ## 🔭 현재 진행 중인 프로젝트
 I'm currently working on [DevHub](https://github.com/dongkyukim1/devhub) - Git 기반의 형상 관리 및 협업 플랫폼
