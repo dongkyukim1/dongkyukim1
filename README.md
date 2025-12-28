@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 <!-- 동적 타이핑 효과 -->
@@ -18,6 +17,7 @@
 
 ## 🎯 About Me
 
+```typescript
 const dongkyukim = {
   role: "Full Stack Developer",
   location: "Seoul, South Korea 🇰🇷",
@@ -280,4 +280,4 @@ mindmap
 ![Snake animation](https://raw.githubusercontent.com/dongkyukim1/dongkyukim1/output/github-contribution-grid-snake-dark.svg)
 
 </div>
-```
+
