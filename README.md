@@ -18,7 +18,6 @@
 
 ## 🎯 About Me
 
-```typescript
 const dongkyukim = {
   role: "Full Stack Developer",
   location: "Seoul, South Korea 🇰🇷",
