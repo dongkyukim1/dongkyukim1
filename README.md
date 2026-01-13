@@ -24,7 +24,7 @@ const dongkyukim = {
   education: "Konkuk University - English & Business Administration",
   experience: ["AIDU Education Platform", "DevHub", "LittleBank", "10+ Projects"],
   currentFocus: ["Next.js 15", "Flutter", "MSA", "AI Integration"],
-  philosophy: "조금씩이라도 매일 배우자 📚",
+  philosophy: "매일한다. 📚",
   
   techStack: {
     languages: ["TypeScript", "Python", "Java", "Dart", "JavaScript"],
@@ -46,7 +46,7 @@ const dongkyukim = {
 
 | 🎖️ Certification | 📅 Date |
 |:---:|:---:|
-| **정보처리기사** | 2024.09 |
+| **정보처리기사(필기)** | 2024.09 |
 | **SQLD** | 2024.06 |
 | **소프트웨어인재개발원 수료** | 2024.08 |
 
