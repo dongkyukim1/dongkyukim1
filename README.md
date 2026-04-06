@@ -1,283 +1,348 @@
 <div align="center">
 
-<!-- 동적 타이핑 효과 -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=100&lines=Hi+there!+I'm+Dongkyu+Kim+%F0%9F%91%8B;Full+Stack+Developer+%7C+Tech+Lead)](https://git.io/typing-svg)
+<!-- HEADER: 3D 텍스트 애니메이션 -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:6366F1,100:EC4899&height=230&section=header&text=Dongkyu%20Kim&fontSize=55&fontColor=FFFFFF&animation=fadeIn&fontAlignY=30&desc=Full%20Stack%20Developer%20%7C%20Building%20Products%20That%20Matter&descSize=16&descAlignY=52&descAlign=50"/>
 
-<!-- 프로필 뷰 카운터 -->
-<img src="https://komarev.com/ghpvc/?username=dongkyukim1&style=for-the-badge&color=blueviolet" alt="Profile Views"/>
+<!-- 타이핑 효과 -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=%F0%9F%9A%80+Django+%E2%86%92+Next.js+%E2%86%92+Flutter+%E2%86%92+Spring+Boot;%F0%9F%8E%AF+%EB%A7%A4%EC%9D%BC%ED%95%9C%EB%8B%A4.+1%2C540%2B+Contributions+and+counting..."/>
+</a>
+
+<br/>
 
 <!-- 소셜 뱃지 -->
-[![Portfolio](https://img.shields.io/badge/Portfolio-dongkyukim.com-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://dongkyukim.com)
-[![Gmail](https://img.shields.io/badge/Gmail-wlsntus55@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wlsntus55@gmail.com)
-[![Blog](https://img.shields.io/badge/Tech_Blog-Tistory-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://begin-developer.tistory.com/)
+<a href="https://dongkyukim.com"><img src="https://img.shields.io/badge/Portfolio-dongkyukim.com-6366F1?style=flat-square&logo=vercel&logoColor=white"/></a>
+<a href="mailto:wlsntus55@gmail.com"><img src="https://img.shields.io/badge/Mail-wlsntus55@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
+<a href="https://begin-developer.tistory.com/"><img src="https://img.shields.io/badge/Blog-Tistory-FF5722?style=flat-square&logo=blogger&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=dongkyukim1&style=flat-square&color=blueviolet&label=Profile+Views"/>
 
 </div>
 
----
+<br/>
 
-## 🎯 About Me
+## `$ whoami`
 
 ```typescript
-const dongkyukim = {
+const dongkyu = {
   role: "Full Stack Developer",
-  location: "Seoul, South Korea 🇰🇷",
-  education: "Konkuk University - English & Business Administration",
-  experience: ["AIDU Education Platform", "DevHub", "LittleBank", "10+ Projects"],
-  currentFocus: ["Next.js 15", "Flutter", "MSA", "AI Integration"],
-  philosophy: "매일한다. 📚",
-  
-  techStack: {
-    languages: ["TypeScript", "Python", "Java", "Dart", "JavaScript"],
-    frontend: ["Next.js", "React", "React Native", "Flutter", "Vue.js"],
-    backend: ["Django", "Spring Boot", "Node.js", "FastAPI"],
-    database: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
-    cloud: ["AWS", "Docker", "Kubernetes", "GitHub Actions"],
+  location: "Seoul, South Korea",
+  education: "Konkuk University — English & Business Administration",
+  philosophy: "매일한다.",
+
+  stack: {
+    frontend:  ["Next.js 16", "React 19", "Flutter", "React Native", "Tailwind"],
+    backend:   ["Django REST", "Spring Boot 3.4", "FastAPI", "Node.js"],
+    database:  ["PostgreSQL", "Redis", "MongoDB", "MySQL"],
+    infra:     ["AWS (ECS/RDS/ALB)", "Docker", "GitHub Actions", "Vercel"],
+    languages: ["TypeScript", "Python", "Java", "Dart"],
   },
-  
-  contact: () => "wlsntus55@gmail.com"
+
+  currentWork: {
+    "AIDU": "AI 교육 플랫폼 — Django + Next.js + React Native + AWS",
+    "KOSMO": "GPS 러닝 플랫폼 — Spring Boot + Next.js + Flutter",
+  },
 };
 ```
 
----
+<br/>
 
-## 🏆 Achievements & Certifications
+## Architecture I Build
+
+> 실제 운영 중인 시스템의 아키텍처입니다.
+
+```
+                    ┌─────────────────────────────────────────────────┐
+                    │              AWS Cloud (ap-northeast-2)          │
+                    │                                                  │
+  ┌──────────┐     │   ┌──────────┐    ┌──────────┐    ┌──────────┐  │
+  │  Next.js  │────▶│   │   ALB    │───▶│   ECS    │───▶│   RDS    │  │
+  │ (Vercel)  │     │   │          │    │ (Fargate)│    │(Postgres)│  │
+  └──────────┘     │   └──────────┘    └────┬─────┘    └──────────┘  │
+                    │                        │                         │
+  ┌──────────┐     │                   ┌────▼─────┐    ┌──────────┐  │
+  │  Flutter  │────▶│                   │  Redis   │    │    S3    │  │
+  │   (App)   │     │                   │ (Cache)  │    │ (Assets) │  │
+  └──────────┘     │                   └──────────┘    └──────────┘  │
+                    │                                                  │
+  ┌──────────┐     │   ┌──────────┐    ┌──────────┐                  │
+  │React Natv│────▶│   │ Cognito  │    │CloudWatch│                  │
+  │  (Expo)  │     │   │  (Auth)  │    │(Monitor) │                  │
+  └──────────┘     │   └──────────┘    └──────────┘                  │
+                    └─────────────────────────────────────────────────┘
+
+  Client Layer          Gateway          Compute           Data Layer
+```
+
+<br/>
+
+## Tech Radar
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="48" height="48"/>
+<br/><b>TypeScript</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="48" height="48"/>
+<br/><b>Python</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="48" height="48"/>
+<br/><b>Java</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="48" height="48"/>
+<br/><b>JavaScript</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" width="48" height="48"/>
+<br/><b>Dart</b>
+</td>
+</tr>
+<tr>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="48" height="48"/>
+<br/><b>React 19</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="48" height="48"/>
+<br/><b>Next.js 16</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="48" height="48"/>
+<br/><b>Flutter</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="48" height="48"/>
+<br/><b>Django</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" width="48" height="48"/>
+<br/><b>Spring Boot</b>
+</td>
+</tr>
+<tr>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="48" height="48"/>
+<br/><b>Docker</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="48" height="48"/>
+<br/><b>AWS</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="K8s" width="48" height="48"/>
+<br/><b>Kubernetes</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="48" height="48"/>
+<br/><b>GraphQL</b>
+</td>
+<td align="center" width="110">
+<img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="48" height="48"/>
+<br/><b>GitHub Actions</b>
+</td>
+</tr>
+<tr>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="48" height="48"/>
+<br/><b>PostgreSQL</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" width="48" height="48"/>
+<br/><b>Redis</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="48" height="48"/>
+<br/><b>MongoDB</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" width="48" height="48"/>
+<br/><b>Tailwind</b>
+</td>
+<td align="center" width="110">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="48" height="48"/>
+<br/><b>FastAPI</b>
+</td>
+</tr>
+</table>
+</div>
+
+<br/>
+
+## Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### <img src="https://img.shields.io/badge/-LIVE-10B981?style=flat-square"/> AIDU — AI Education Platform
+> **학생/선생님을 위한 AI 기반 과학 + 영어 학습 플랫폼**
+
+<a href="https://aiduapp.com"><img src="https://img.shields.io/badge/aiduapp.com-6366F1?style=flat-square&logo=vercel&logoColor=white"/></a>
+<a href="https://teacher.aiduapp.com"><img src="https://img.shields.io/badge/teacher.aiduapp.com-10B981?style=flat-square&logo=vercel&logoColor=white"/></a>
+
+```
+Backend   Django REST + Celery + PostgreSQL + Redis
+Frontend  Next.js 15 + Zustand + Tailwind
+Mobile    React Native (Expo)
+Infra     AWS ECS + RDS + S3 + Cognito + CloudWatch
+```
+
+**Key Contributions:**
+- Cognito 기반 멀티테넌트 인증 시스템 설계
+- 학습 세트 + TA 개입 실시간 관리 API 60+ 개 구현
+- 학생/선생님/관리자 3개 프론트엔드 + 모바일 앱 개발
+- AWS ECS Fargate 기반 프로덕션 인프라 구축
+
+</td>
+<td width="50%" valign="top">
+
+### <img src="https://img.shields.io/badge/-IN_DEV-F59E0B?style=flat-square"/> KOSMO — GPS Running Platform
+> **GPS 러닝 트래킹 + 영토 정복 + 크루 챌린지 플랫폼**
+
+<a href="https://github.com/dongkyukim1"><img src="https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github"/></a>
+
+```
+Backend   Spring Boot 3.4 + JPA + PostgreSQL + Redis
+Frontend  Next.js 16 + React 19 + Zustand + Recharts
+Mobile    Flutter + KakaoMap + GPS Tracking
+Infra     AWS ECS + RDS + ElastiCache + ALB
+```
+
+**Key Contributions:**
+- Spring Boot + JWT/OAuth2 인증 시스템 설계
+- GPS 기반 러닝 트래킹 + 그리드 영토 정복 로직
+- KakaoMap/OSM 기반 실시간 맵 렌더링
+- 관리자 대시보드 + 랭킹 리더보드 구현
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### <img src="https://img.shields.io/badge/-APP-8B5CF6?style=flat-square"/> LittleBank — Kids Goal Tracker
+> **아이들을 위한 목표 설정 + 용돈 관리 앱**
+
+<a href="https://github.com/dongkyukim1/littlebank_prod"><img src="https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github"/></a>
+
+```
+Mobile    Flutter + Dart + Provider
+Design    Material Design 3 + Custom Animations
+```
+
+**Key Contributions:**
+- Solo Developer — 기획부터 배포까지 전체 개발
+- 목표 설정 + 진행도 시각화 + 보상 시스템
+- Custom Widget 기반 인터랙티브 UI
+
+</td>
+<td width="50%" valign="top">
+
+### <img src="https://img.shields.io/badge/-TEAM-3B82F6?style=flat-square"/> DevHub — Version Control Platform
+> **Git 기반 형상 관리 + 협업 플랫폼 (5인 팀)**
+
+<a href="https://github.com/dongkyukim1/devhub-server"><img src="https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github"/></a>
+
+```
+Backend   Spring Boot + Flask + MySQL
+AI        OpenAI API (Code Review)
+Infra     Docker + AWS
+```
+
+**Key Contributions:**
+- Project Manager + Frontend Lead
+- 이슈 트래킹 + PR/코드 리뷰 시스템 구현
+- OpenAI 기반 AI 자동 코드 리뷰 기능 개발
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## GitHub Analytics
 
 <div align="center">
 
-| 🎖️ Certification | 📅 Date |
-|:---:|:---:|
-| **정보처리기사(필기)** | 2024.09 |
-| **SQLD** | 2024.06 |
-| **소프트웨어인재개발원 수료** | 2024.08 |
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dongkyukim1&theme=tokyonight" width="100%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dongkyukim1&theme=tokyonight" width="32.5%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dongkyukim1&theme=tokyonight" width="32.5%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=dongkyukim1&theme=tokyonight" width="32.5%"/>
+
+<img src="https://streak-stats.demolab.com?user=dongkyukim1&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=EC4899&currStreakLabel=A78BFA" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dongkyukim1&theme=tokyonight&utcOffset=9" width="32.5%"/>
 
 </div>
 
----
-
-## ⚡ Tech Stack
-
 <div align="center">
 
-### 💻 Languages
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### 🚀 Frontend
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-### 🔧 Backend
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![DRF](https://img.shields.io/badge/Django_REST-ff1709?style=for-the-badge&logo=django&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-
-### 🗄️ Database & Cache
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### ☁️ Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dongkyukim1&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=A78BFA&line=6366F1&point=EC4899)](https://github.com/dongkyukim1)
 
 </div>
 
----
+<br/>
 
-## 🔥 Featured Projects
-
-<div align="center">
-
-### 🎓 AIDU - AI Education Platform
-[![AIDU](https://img.shields.io/badge/🌐_LIVE-aiduapp.com-6366F1?style=for-the-badge)](https://aiduapp.com)
-[![Teacher](https://img.shields.io/badge/👨‍🏫_TEACHER-teacher.aiduapp.com-10B981?style=for-the-badge)](https://teacher.aiduapp.com)
-
-</div>
-
-> **학생/선생님을 위한 AI 기반 과학·영어 학습 플랫폼**
+## Experience & Certifications
 
 ```
-🔹 Tech: Django REST Framework | Next.js | React Native (Expo) | PostgreSQL | Redis | AWS
-🔹 Features: Cognito 인증 | 학습 세트 시스템 | TA 개입 | 실시간 진도 관리
-🔹 Role: Full Stack Developer - 백엔드 API, 프론트엔드, 모바일 앱, AWS 인프라
+2024.09 - Present  AIDU         Full Stack Developer (Django, Next.js, React Native, AWS)
+2024.09            정보처리기사(필기) 취득
+2024.06            SQLD 취득
+2024.03 - 2024.08  소프트웨어인재개발원 개발자 과정 수료
+2022.12 - 2023.06  태흥엔지니어링 해외출장 담당자
+2017.03 - 2022.12  스마트스토어 운영 (한정판 브랜드)
+2016.06 - 2017.02  영어강사 (초등~고등)
+2016.07            University of Mississippi 교환학생
+2017.04            건국대학교 졸업 (영어학과 + 경영학과)
 ```
 
----
+<br/>
 
-<div align="center">
-
-### 🌌 KOSMO - MBTI & AI Prediction Platform
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/dongkyukim1)
-
-</div>
-
-> **MBTI 성격 분석 및 AI 기반 예측 서비스 플랫폼**
-
-```
-🔹 Tech: Next.js 16 | React 19 | Spring Boot 3.4 | PostgreSQL | Redis | Flutter
-🔹 Features: MBTI 테스트 | 궁합 분석 | AI 예측 시각화 | 관리자 대시보드 | 모바일 앱
-🔹 Role: Full Stack Developer - 프론트엔드, 백엔드, 모바일 앱 전체 개발
-```
-
----
-
-<div align="center">
-
-### 🏦 LittleBank - Kids Goal Tracker App
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/dongkyukim1/littlebank_prod)
-
-</div>
-
-> **아이들을 위한 목표 설정 및 용돈 관리 Flutter 앱**
-
-```
-🔹 Tech: Flutter | Dart | Provider | Material Design 3
-🔹 Features: 목표 설정 | 진행도 시각화 | 용돈 적립 | 성취 보상 시스템
-🔹 Role: Solo Developer - Flutter UI/UX 설계 및 전체 개발
-```
-
----
-
-<div align="center">
-
-### 🔗 DevHub - Version Control Platform
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/dongkyukim1/devhub-server)
-
-</div>
-
-> **Git 기반 형상 관리 및 협업 플랫폼 (5인 팀 프로젝트)**
-
-```
-🔹 Tech: Spring Boot | Flask | MySQL | Docker | AWS | OpenAI API
-🔹 Features: 프로젝트 관리 | 이슈 트래킹 | PR/코드 리뷰 | AI 코드 리뷰
-🔹 Role: Project Manager & Frontend Lead
-```
-
----
-
-<div align="center">
-
-### 🏠 MyHouse - Housing Subscription Platform
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/dongkyukim1/myhouse)
-
-</div>
-
-> **주택 청약 정보 플랫폼**
-
-```
-🔹 Tech: Next.js | TypeScript | Tailwind CSS
-🔹 Features: 청약 일정 | 자격 확인 | 정보 조회
-```
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=dongkyukim1&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dongkyukim1&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=dongkyukim1&theme=tokyonight&hide_border=true&background=0D1117" />
-
-</div>
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dongkyukim1&theme=tokyo-night&hide_border=true&bg_color=0D1117)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-## 🎯 Current Focus
-
-<div align="center">
+## What I'm Working On
 
 ```mermaid
-mindmap
-  root((2025 Goals))
-    Frontend
-      Next.js 15 Master
-      React Server Components
-      Flutter Advanced
-    Backend
-      MSA Architecture
-      System Design
-      Performance Optimization
-    DevOps
-      Kubernetes
-      CI/CD Pipeline
-      Monitoring
-    Career
-      Tech Lead
-      Open Source Contribution
-      Technical Writing
+graph LR
+    A["2025-2026 Roadmap"] --> B["Frontend"]
+    A --> C["Backend"]
+    A --> D["Infra"]
+    
+    B --> B1["Next.js RSC Deep Dive"]
+    B --> B2["Flutter Advanced Patterns"]
+    
+    C --> C1["MSA + Event-Driven"]
+    C --> C2["System Design"]
+    
+    D --> D1["K8s Production"]
+    D --> D2["CI/CD + Monitoring"]
+    
+    style A fill:#6366F1,stroke:none,color:#fff
+    style B fill:#3B82F6,stroke:none,color:#fff
+    style C fill:#10B981,stroke:none,color:#fff
+    style D fill:#F59E0B,stroke:none,color:#fff
+    style B1 fill:#1e293b,stroke:#3B82F6,color:#93c5fd
+    style B2 fill:#1e293b,stroke:#3B82F6,color:#93c5fd
+    style C1 fill:#1e293b,stroke:#10B981,color:#6ee7b7
+    style C2 fill:#1e293b,stroke:#10B981,color:#6ee7b7
+    style D1 fill:#1e293b,stroke:#F59E0B,color:#fcd34d
+    style D2 fill:#1e293b,stroke:#F59E0B,color:#fcd34d
 ```
 
-</div>
-
----
-
-## 💼 Experience Timeline
-
-```
-2024.09 - Present  │ 🚀 AIDU - Full Stack Developer (Django, Next.js, React Native)
-2024.03 - 2024.08  │ 📚 소프트웨어인재개발원 개발자 과정 수료
-2022.12 - 2023.06  │ 🌏 태흥엔지니어링 해외출장 담당자
-2017.03 - 2022.12  │ 🛒 스마트스토어 운영 (한정판 브랜드)
-2016.06 - 2017.02  │ 📖 영어강사 (초4 ~ 고3)
-2016.07            │ 🎓 University of Mississippi 교환학생
-2017.04            │ 🎓 건국대학교 졸업 (영어학과 · 경영학과)
-```
-
----
-
-## 🤝 Let's Connect
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-dongkyukim.com-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://dongkyukim.com)
-[![Email](https://img.shields.io/badge/Email-wlsntus55@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wlsntus55@gmail.com)
-[![Blog](https://img.shields.io/badge/Blog-Tistory-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://begin-developer.tistory.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-dongkyukim1-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dongkyukim1)
-
-</div>
+<br/>
 
 ---
 
 <div align="center">
 
-### 💬 Random Dev Quote
+<a href="https://dongkyukim.com"><img src="https://img.shields.io/badge/Portfolio-dongkyukim.com-6366F1?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+<a href="mailto:wlsntus55@gmail.com"><img src="https://img.shields.io/badge/Email-wlsntus55@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://begin-developer.tistory.com/"><img src="https://img.shields.io/badge/Blog-Tistory-FF5722?style=for-the-badge&logo=blogger&logoColor=white"/></a>
 
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)](https://github.com/piyushsuthar/github-readme-quotes)
+<br/><br/>
 
-</div>
-
----
-
-<div align="center">
-
-**Thanks for visiting! Let's build something amazing together 🚀**
-
-![Snake animation](https://raw.githubusercontent.com/dongkyukim1/dongkyukim1/output/github-contribution-grid-snake-dark.svg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:6366F1,100:EC4899&height=120&section=footer"/>
 
 </div>
-
